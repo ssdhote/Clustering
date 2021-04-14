@@ -16,14 +16,16 @@ In Clustering we have :
 3.	DBSCAN Clustering
 
 A)	Hierarchial Clustering:-
-This is mainly used for Numerical data, it is also called as bottom-up approach. In this, among all the records two records which are having less Euclidean distance are merged in to one cluster and again this cluster inturn with which it is having less euclidean distance that record is merged with the cluster.
+
+      This is mainly used for Numerical data, it is also called as bottom-up approach. In this, among all the records two records which are having less Euclidean distance are         merged in to one cluster and again this cluster inturn with which it is having less euclidean distance that record is merged with the cluster.
+      
 Now how to calculate distance between 2 clusters or distance between cluster and record ?
 
-For this we have different methods:
-1. Single linkage method : *It will consider minimum distance*
-2. Complete linkage method : *It will consider maximum distance*
-3. Average linkage method : *It will consider average of all distances*
-4. centroid linkage method : *It will consider centroid of records of one cluster and centroid of records of other cluster and now distance between these two centroids is considered.*
+   For this we have different methods:
+    1. Single linkage method : *It will consider minimum distance*
+    2. Complete linkage method : *It will consider maximum distance*
+    3. Average linkage method : *It will consider average of all distances*
+    4. centroid linkage method : *It will consider centroid of records of one cluster and centroid of records of other cluster and now distance between these two centroids is considered.*
 Summarization of entire cluster process is done using Dendogram
 
 Advantages :
@@ -50,25 +52,25 @@ Diasadvantages:
 1.	If we have outliers, it will give false clusters
 
 C)	DBSCAN Clustering :-
-D)	There are some disadvantages in Hierarchial clustering and K - means Clustering, among them main disadvantages are that they doesnt perform well with non-spherical shapes of clusters and sensitive to noise or outliers.
-E)	To deal with this we have Density Based Spatial Clustering (DBSCAN) :
-F)	    -It is mainly used to find outliers and merge them and to deal with non-spherical data
-G)	    -Clustering is mainly done based on density of data points (where more number of data points are present).
-H)	step 1: Mainly we have 2 parameters:
-I)	        1. eps
-J)	        2. Min points
-K)	step 2: eps >0 => compulsary
-L)	        Suppose eps=2 which means it randomly chooses a point x from that point it draws a circle with radius=2 that is nothing but cluster with eps=2
-M)	step 3: Min points, to know neighbourhood is dense enough or not we use min points.
-N)	        Suppose minpoints = 8, which means neighbourhood has atleast >= 8 data points then it is denser and forms cluster, if < 8 data points then not denser and outliers.
-O)	step 4: Border points
-P)	        In eps neighbourhood that contains less than min points but it belongs to eps neighbourhood of another core point
-Q)	Note:
-If not core point and not border point then it is noise or outliers
-
+	There are some disadvantages in Hierarchial clustering and K - means Clustering, among them main disadvantages are that they doesnt perform well with non-spherical shapes of clusters and sensitive to noise or outliers.
+     To deal with this we have Density Based Spatial Clustering (DBSCAN) :
+	    -It is mainly used to find outliers and merge them and to deal with non-spherical data
+	    -Clustering is mainly done based on density of data points (where more number of data points are present).
+	step 1: Mainly we have 2 parameters:
+	        1. eps
+	        2. Min points
+	step 2: eps >0 => compulsary
+	        Suppose eps=2 which means it randomly chooses a point x from that point it draws a circle with radius=2 that is nothing but cluster with eps=2
+	step 3: Min points, to know neighbourhood is dense enough or not we use min points.
+	        Suppose minpoints = 8, which means neighbourhood has atleast >= 8 data points then it is denser and forms cluster, if < 8 data points then not denser and outliers.
+	step 4: Border points
+	        In eps neighbourhood that contains less than min points but it belongs to eps neighbourhood of another core point
+              
+	Note: If not core point and not border point then it is noise or outliers
+        
 
 Data used:
-      ,
+      
 1)	Crime Dataset    
 2)	 Airlines Dataset
 Programming language:Python
