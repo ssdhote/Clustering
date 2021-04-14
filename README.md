@@ -7,11 +7,13 @@ Recommendation Engine
 PCA
 Text mining
 NLP
+
 In Clustering we have :
 
 Hierarchial Clustering
 K-Means Clustering
 DBSCAN Clustering
+
 A) Hierarchial Clustering:-
 
 This is mainly used for Numerical data, it is also called as bottom-up approach. In this, among all the records two records which are having less Euclidean distance are merged in to one cluster and again this cluster inturn with which it is having less euclidean distance that record is merged with the cluster. Now how to calculate distance between 2 clusters or distance between cluster and record ?
@@ -28,9 +30,11 @@ Advantages :
 
 Best suitable for smaller datasets.
 Dendogram gives best understanding of clustered data.
+
 Disadvantages :
 
 It is slower for large datasets.
+
 B) K means Clustering:-
 
  step 1: K= 3, we can take different values for K, here K=3 so entire data is randomly divided in to 3 parts need not be equal.
@@ -41,13 +45,16 @@ B) K means Clustering:-
  step 6: Repeat steps from 3 to 5 until there is no need to move data points from one cluster to other cluster.
 
 By using Elbow graph or screw plot we will decide proper K-value.
+
 Advantages:
 
 Partition of data accurately fast
 Suitable for larger datasets
+
 Diasadvantages:
 
 If we have outliers, it will give false clusters
+
 C) DBSCAN Clustering :-
 
 There are some disadvantages in Hierarchial clustering and K - means Clustering, among them main disadvantages are that they doesnt perform well with non-spherical shapes of clusters and sensitive to noise or outliers.
