@@ -17,15 +17,17 @@ In Clustering we have :
 
 A)	Hierarchial Clustering:-
 
-      This is mainly used for Numerical data, it is also called as bottom-up approach. In this, among all the records two records which are having less Euclidean distance are         merged in to one cluster and again this cluster inturn with which it is having less euclidean distance that record is merged with the cluster.
+   This is mainly used for Numerical data, it is also called as bottom-up approach. In this, among all the records two records which are having less Euclidean distance are         merged in to one cluster and again this cluster inturn with which it is having less euclidean distance that record is merged with the cluster.
       
 Now how to calculate distance between 2 clusters or distance between cluster and record ?
 
    For this we have different methods:
+   
     1. Single linkage method : *It will consider minimum distance*
     2. Complete linkage method : *It will consider maximum distance*
     3. Average linkage method : *It will consider average of all distances*
     4. centroid linkage method : *It will consider centroid of records of one cluster and centroid of records of other cluster and now distance between these two centroids is considered.*
+    
 Summarization of entire cluster process is done using Dendogram
 
 Advantages :
@@ -36,6 +38,7 @@ Disadvantages :
 1.	It is slower for large datasets.
 
 B)	K means Clustering:- 
+
 step 1: K= 3, we can take different values for K, here K=3 so entire data is randomly divided in to 3 parts need not be equal.
 step 2: Centroid computation - calculate centroid for each part.
 step 3: find distance from centroid to all datapoints in each part.
@@ -52,6 +55,7 @@ Diasadvantages:
 1.	If we have outliers, it will give false clusters
 
 C)	DBSCAN Clustering :-
+
 	There are some disadvantages in Hierarchial clustering and K - means Clustering, among them main disadvantages are that they doesnt perform well with non-spherical shapes of clusters and sensitive to noise or outliers.
      To deal with this we have Density Based Spatial Clustering (DBSCAN) :
 	    -It is mainly used to find outliers and merge them and to deal with non-spherical data
